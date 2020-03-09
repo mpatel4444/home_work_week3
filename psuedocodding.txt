@@ -1,0 +1,10 @@
+input : length, type of char.
+type of char : any one or two or three or all
+
+for eg : length 10 and char choice 2 ie (lower and upper case)
+
+make a for loop from 0 to 1 - length of pass
+in that use a random function to select any of the choices.
+-----for that random function run the for loop from 0 to number of input choices to select an array
+in main for loop use random number function to select the character from selected array of character and append to 
+a variable called password.
