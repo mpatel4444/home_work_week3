@@ -75,7 +75,8 @@ function randomPass(len, c1, c2, c3, c4) {
 
         else i--;
 
-        document.getElementById("finalPassword").value = passWord;
     }
+    document.getElementById("finalPassword").value = passWord;
+
 
 }
