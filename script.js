@@ -26,7 +26,7 @@ function checkBox() {
 
     if (document.getElementById("example1").checked == false && document.getElementById("example2").checked == false && document.getElementById("example3").checked == false && document.getElementById("example4").checked == false)
         $("#promptModal").modal();
-    else randomPass(parseInt(document.getElementById("noOfChar").value),document.getElementById("example1").checked,document.getElementById("example2").checked,document.getElementById("example3").checked,document.getElementById("example4").checked);
+    else randomPass(parseInt(document.getElementById("noOfChar").value), document.getElementById("example1").checked, document.getElementById("example2").checked, document.getElementById("example3").checked, document.getElementById("example4").checked);
 
 }
 
@@ -47,7 +47,7 @@ function randomPass(len, c1, c2, c3, c4) {
     var s = "!\"#$%" + String.fromCharCode(38) + "'()*+,-./:;" + String.fromCharCode(60) + "=>?@[\\]^_`{|}~";
     var passWord = "";
     var flag = false;
-    
+
 
     for (let i = 0; i < len; i++) {
 
@@ -55,7 +55,6 @@ function randomPass(len, c1, c2, c3, c4) {
 
         var charSelect = Math.floor(Math.random() * 4);
         if (charSelect == 0 && c1 == true) {
-            
             passWord += l.charAt(Math.floor(Math.random() * 10));
 
         }
@@ -78,5 +77,5 @@ function randomPass(len, c1, c2, c3, c4) {
 
         document.getElementById("finalPassword").value = passWord;
     }
-    
+
 }
